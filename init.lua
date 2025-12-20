@@ -104,6 +104,10 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- Brendan's keymaps
 vim.keymap.set('i', 'kj', '<Esc>', { noremap = true, desc = 'Exit insert mode with kj' })
 vim.opt.colorcolumn = '81'
+vim.opt.tabstop = 4 -- width of a tab character
+vim.opt.shiftwidth = 4 -- width of indentation
+vim.opt.softtabstop = 4 -- how many spaces when you hit tab in insert mode
+vim.opt.expandtab = true -- use spaces instead of tabs (omit if you want actual tabs)
 --
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
